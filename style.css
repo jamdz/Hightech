@@ -1,0 +1,215 @@
+
+/*Universal css*/
+
+*{
+
+list-style-type: none;
+text-decoration: none;
+margin: 0;
+padding: 0;
+
+}
+
+/*top nav css styles*/
+
+.top-bar{
+
+    background-color: black;
+    overflow-y: hidden;
+
+}
+
+.top-bar-nav{
+
+    display: flex;
+
+}
+
+
+/*Menu list css styles*/
+
+.menu-list a{
+
+    color: rgb(117, 117, 122);
+    font-size: 1.1rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+.menu-list{
+
+    display: flex;
+
+}
+
+.menu-list li {
+
+    padding: 18px;
+
+}
+
+.menu-list li:hover{
+
+    background-color: brown;
+}
+
+.menu{
+
+    margin: 17px auto;
+}
+
+
+/*images logo*/
+
+.img-logo{
+
+    width: 160px;
+    height: auto;
+}
+
+.logo{
+
+    display: flex;
+    flex: 2;
+}
+
+
+    /*Hambruger css styles*/
+
+    .hamburger-bar{
+
+        background-color: white;
+        width: 46px;
+        height: 0.9px;
+        margin: 6px 0;
+        
+    }
+    
+    .hamburger{
+    
+        position: relative;
+        margin: 28px 0;
+        flex: 1;
+        display: none;
+    }
+
+
+    .side-drop-menu-list{
+
+        display: none;
+    }
+
+    /*Header css style*/
+
+    .header{
+
+        background-color: rgb(36, 37, 37);
+        padding: 3%;
+        height: 86vh;
+        display: flex;
+        overflow-x: hidden;
+        
+    }
+
+    .header-button{
+
+        background-color: magenta;
+        width: 11vw;
+        height: 5vh;
+        font-size: 17px;
+        font-weight: bold;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        border-radius: 15px;
+        border: 0;
+        margin: 58px 0;
+    }
+
+    .header-button:hover{
+
+        background-color: mediumturquoise;
+
+    }
+
+
+
+
+
+/*Media query css styles for 750px and lower */
+
+@media screen and (max-width: 750px){
+
+    .menu{
+
+        display: none;
+
+    }
+
+    .img-logo{
+
+        width: 30vw;
+        height: auto;
+    }
+
+    .logo{
+
+        flex: 5;
+
+    }
+
+    /*Hamburger css styles*/
+
+    .hamburger{
+
+        display: block;
+        flex: 1;
+
+    }
+
+    .hamburger-bar{
+
+        background-color: white;
+    }
+
+    /*Side Nav drop menu*/
+
+    .side-drop-menu{
+    width: 56vw;
+    height: 112vh;
+    background-color: lightgrey;
+    position: absolute;
+    top:0;
+    overflow-x: hidden;
+    opacity: 0.7;
+    z-index: 1;
+    
+    }
+
+    .side-drop-menu-list li{
+
+        padding: 5px;
+        display: block;
+    }
+
+    .side-drop-menu-list {
+
+        position: relative;
+        top: 117px;
+        display: block;
+    }
+
+    .side-drop-menu-list li{
+
+        margin-bottom: 17px;
+    }
+
+    .side-drop-menu-list a{
+
+        font-size: 17px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        
+    }
+
+    .side-drop-menu-list a:hover {
+
+        color: limegreen;
+   
+       }
+}
